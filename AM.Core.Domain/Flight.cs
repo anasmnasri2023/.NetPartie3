@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace AM.Core.Domain
 {
-    public class Flight : Passenger
+    public class Flight
     {
         public string Destination { get; set; }
         public string Departure { get; set; }
@@ -11,7 +11,9 @@ namespace AM.Core.Domain
         public int FlightId { get; set; }
         public DateTime EffectiveArrival { get; set; }
         public int EstimatedDuration { get; set; }
+
         public Plane MyPlane { get; set; }
+
         public List<Passenger> Passengers { get; set; } = new List<Passenger>();
 
         public override string ToString()
